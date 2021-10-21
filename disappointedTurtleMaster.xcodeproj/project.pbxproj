@@ -16,6 +16,7 @@
 		5254D37127212395008ECD2C /* disappointedTurtleMasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D37027212395008ECD2C /* disappointedTurtleMasterTests.swift */; };
 		5254D37B27212395008ECD2C /* disappointedTurtleMasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D37A27212395008ECD2C /* disappointedTurtleMasterUITests.swift */; };
 		5254D37D27212395008ECD2C /* disappointedTurtleMasterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D37C27212395008ECD2C /* disappointedTurtleMasterUITestsLaunchTests.swift */; };
+		5254D391272145C0008ECD2C /* TurtleStatuses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5254D390272145C0008ECD2C /* TurtleStatuses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5254D37627212395008ECD2C /* disappointedTurtleMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = disappointedTurtleMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5254D37A27212395008ECD2C /* disappointedTurtleMasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = disappointedTurtleMasterUITests.swift; sourceTree = "<group>"; };
 		5254D37C27212395008ECD2C /* disappointedTurtleMasterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = disappointedTurtleMasterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5254D390272145C0008ECD2C /* TurtleStatuses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtleStatuses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				5254D38D27213F9F008ECD2C /* Model */,
 				5254D38E27213FC3008ECD2C /* View */,
 				5254D38F27213FD7008ECD2C /* Controller */,
+				5254D36227212394008ECD2C /* Assets.xcassets */,
 				5254D36F27212395008ECD2C /* disappointedTurtleMasterTests */,
 				5254D37927212395008ECD2C /* disappointedTurtleMasterUITests */,
 				5254D35727212390008ECD2C /* Products */,
@@ -129,6 +132,7 @@
 		5254D38D27213F9F008ECD2C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5254D390272145C0008ECD2C /* TurtleStatuses.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,7 +140,6 @@
 		5254D38E27213FC3008ECD2C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5254D36227212394008ECD2C /* Assets.xcassets */,
 				5254D35F27212390008ECD2C /* Main.storyboard */,
 				5254D36427212394008ECD2C /* LaunchScreen.storyboard */,
 			);
@@ -285,6 +288,7 @@
 				5254D35E27212390008ECD2C /* ViewController.swift in Sources */,
 				5254D35A27212390008ECD2C /* AppDelegate.swift in Sources */,
 				5254D35C27212390008ECD2C /* SceneDelegate.swift in Sources */,
+				5254D391272145C0008ECD2C /* TurtleStatuses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
