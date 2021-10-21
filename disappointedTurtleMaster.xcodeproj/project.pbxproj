@@ -80,6 +80,9 @@
 			isa = PBXGroup;
 			children = (
 				5254D35827212390008ECD2C /* disappointedTurtleMaster */,
+				5254D38D27213F9F008ECD2C /* Model */,
+				5254D38E27213FC3008ECD2C /* View */,
+				5254D38F27213FD7008ECD2C /* Controller */,
 				5254D36F27212395008ECD2C /* disappointedTurtleMasterTests */,
 				5254D37927212395008ECD2C /* disappointedTurtleMasterUITests */,
 				5254D35727212390008ECD2C /* Products */,
@@ -101,10 +104,6 @@
 			children = (
 				5254D35927212390008ECD2C /* AppDelegate.swift */,
 				5254D35B27212390008ECD2C /* SceneDelegate.swift */,
-				5254D35D27212390008ECD2C /* ViewController.swift */,
-				5254D35F27212390008ECD2C /* Main.storyboard */,
-				5254D36227212394008ECD2C /* Assets.xcassets */,
-				5254D36427212394008ECD2C /* LaunchScreen.storyboard */,
 				5254D36727212394008ECD2C /* Info.plist */,
 			);
 			path = disappointedTurtleMaster;
@@ -125,6 +124,31 @@
 				5254D37C27212395008ECD2C /* disappointedTurtleMasterUITestsLaunchTests.swift */,
 			);
 			path = disappointedTurtleMasterUITests;
+			sourceTree = "<group>";
+		};
+		5254D38D27213F9F008ECD2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5254D38E27213FC3008ECD2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5254D36227212394008ECD2C /* Assets.xcassets */,
+				5254D35F27212390008ECD2C /* Main.storyboard */,
+				5254D36427212394008ECD2C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5254D38F27213FD7008ECD2C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5254D35D27212390008ECD2C /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,6 +471,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +500,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
