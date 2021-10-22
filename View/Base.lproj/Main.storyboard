@@ -17,49 +17,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BqY-Ft-kn4">
-                                <rect key="frame" x="82" y="275" width="250" height="346"/>
+                                <rect key="frame" x="0.0" y="274" width="414" height="348"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The turtle is not angry" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkP-ZB-P0P">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5bI-IY-1Eh"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="disappointed_turtle_vector" translatesAutoresizingMaskIntoConstraints="NO" id="YvW-CV-vnq">
-                                        <rect key="frame" x="0.0" y="24" width="250" height="250"/>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVh-Ky-xcv">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="200"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="I13-Ye-WZ4"/>
-                                            <constraint firstAttribute="height" constant="250" id="Zyn-i0-bYh"/>
+                                            <constraint firstAttribute="height" constant="200" id="9kO-q1-bMD"/>
                                         </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today, the turtle is..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3R-yi-mQE">
-                                        <rect key="frame" x="0.0" y="274" width="250" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVh-Ky-xcv">
-                                        <rect key="frame" x="0.0" y="294.5" width="250" height="31"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Click me to find out"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <backgroundConfiguration key="background" image="disappointed_turtle_vector" imageContentMode="scaleAspectFit"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="turtleStatusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hGC-IY-LPe"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(wait for it)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MD1-tx-O4E">
-                                        <rect key="frame" x="0.0" y="325.5" width="250" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today, the turtle ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3R-yi-mQE">
+                                        <rect key="frame" x="0.0" y="250" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="v7D-ZC-iSG"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(poke turtle to find out)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MD1-tx-O4E">
+                                        <rect key="frame" x="0.0" y="300" width="414" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="G3R-yi-mQE" firstAttribute="top" secondItem="XVh-Ky-xcv" secondAttribute="bottom" id="5qI-rV-ofG"/>
+                                    <constraint firstItem="XVh-Ky-xcv" firstAttribute="leading" secondItem="BqY-Ft-kn4" secondAttribute="leading" id="F17-Q0-VLq"/>
+                                    <constraint firstAttribute="trailing" secondItem="XVh-Ky-xcv" secondAttribute="trailing" id="KnY-J4-ODi"/>
+                                    <constraint firstItem="XVh-Ky-xcv" firstAttribute="top" secondItem="IkP-ZB-P0P" secondAttribute="bottom" id="PGD-54-wxd"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="BqY-Ft-kn4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HGM-cc-VxT"/>
-                            <constraint firstItem="BqY-Ft-kn4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KMz-qe-2h8"/>
+                            <constraint firstItem="BqY-Ft-kn4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1dY-eQ-kOa"/>
+                            <constraint firstItem="BqY-Ft-kn4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IbI-ji-TIW"/>
+                            <constraint firstItem="BqY-Ft-kn4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="keg-ac-26u"/>
                         </constraints>
                     </view>
                     <connections>
